@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+class Person{
+	private:
+		string name;
+	    int age;
+	    string country;
+	public:
+		Person (string n,int a,string c){
+			name = n;
+			age = a;
+			country = c;
+		}
+		string getname(){
+			return name;
+		}
+		int getage(){
+			return age;
+		}
+		string getcountry(){
+			return country;
+		}
+		void display(){
+			cout << "Name: " << name << endl;
+			cout << "Age: " << age << endl;
+			cout << "Country: " << country << endl;
+		}
+};
+int main(){
+	Person person("Jithu", 20, "India");
+	person.display();
+	return 0;
+}
